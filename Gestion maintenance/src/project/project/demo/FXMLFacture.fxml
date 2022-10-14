@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.xemacscode.demo.FactureController">
+   <children>
+      <TextField fx:id="TFdate_facture" layoutX="17.0" layoutY="105.0" promptText="date_facture" />
+      <TextField fx:id="TFmontant_facture" layoutX="17.0" layoutY="161.0" promptText="montant_facture" />
+      <TextField fx:id="TFvaleur_main_oeuvre" layoutX="17.0" layoutY="232.0" promptText="valeur_main_oeuvre" />
+      <TextField fx:id="TFvaleur_piece_recharge" layoutX="17.0" layoutY="290.0" promptText="valeur_main_oeuvre" />
+      <Button fx:id="idsavee" layoutX="2.0" layoutY="345.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="67.0" style="-fx-background-color: green;" text="insert" />
+      <Button fx:id="idshow" layoutX="77.0" layoutY="345.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="67.0" style="-fx-background-color: yellow;" text="update" />
+      <TableView fx:id="idtabl" layoutX="227.0" layoutY="32.0" prefHeight="289.0" prefWidth="676.0" style="-fx-background-color: blue;">
+        <columns>
+          <TableColumn fx:id="callcode" prefWidth="110.0" text="code_facture" />
+          <TableColumn fx:id="calldate" prefWidth="99.0" text="date_facture" />
+            <TableColumn fx:id="callmontant" prefWidth="125.0" text="montant_facture" />
+            <TableColumn fx:id="callmain" prefWidth="152.0" text="valeur_main_oeuvre" />
+            <TableColumn fx:id="callpiece" prefWidth="189.0" text="valeur_piece_recharge" />
+        </columns>
+      </TableView>
+      <Button fx:id="iddel" layoutX="153.0" layoutY="345.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="67.0" style="-fx-background-color: red;" text="delete" />
+      <TextField fx:id="TFcode" layoutX="17.0" layoutY="41.0" promptText="code_facture" />
+      <Button fx:id="idreturn" layoutX="736.0" layoutY="345.0" mnemonicParsing="false" onAction="#changeScreenButtonPushed" style="-fx-background-color: violet;" text="Return to Demande" />
+   </children>
+</AnchorPane>
